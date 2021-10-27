@@ -62,7 +62,7 @@ main {
     color: #707070;
     
 }
-.main-nav-actions,
+/* .main-nav-actions, */
 .main-nav-playlist,
 .main-nav-bottom {
     padding: 0 22px;
@@ -87,6 +87,7 @@ main {
 /* actions menu */
 .menu-actions {
     margin-bottom: 30px;
+
 }
 .menu-actions li {
     margin-bottom: 10px;
@@ -99,6 +100,14 @@ main {
 .action-icon img {
     height: 100%;
     vertical-align: middle;
+}
+.normal {
+    padding-left: 22px;
+}
+.active {
+    color: #d4d2d4;
+    border-left: 3px solid #adff2f;
+    padding-left: 20px;
 }
 /* playlist nav */
 .main-nav-playlist {
@@ -169,7 +178,27 @@ ul.my-playlist {
     width: calc(100% - 250px);
     height: 100%;
     background-color: chocolate;
+    padding-top: 100px;
 }
+.right-main-content-nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+.right-main-content-nav li{
+    padding-right: 25px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 40px;
+}
+
+
+
+
+
+
+
 /*MEDIA QUERY MAIN*/
 /*main nav*/
 @media screen and (max-width: 600px) {
@@ -212,6 +241,11 @@ ul.my-playlist {
     .main-nav-actions {
         flex-grow: 1;
     }
+    /*right content*/
+    .right-main-content {
+        width: calc(100% - 50px);
+    }
+
 }
 
 
@@ -268,6 +302,7 @@ footer {
     margin-right: 10px;
     font-size: 17px;
 }
+/*center footer - playback bar*/
 .playback-nav {
     flex-grow: 1;
     text-align: center;
@@ -301,6 +336,7 @@ footer {
     border: 2px solid #bdbdbd;
     width: 20%;
 }
+/*right footer - volume bar*/
 .volume-bar i {
     margin-right: 5px;
     color: #fefefe;
