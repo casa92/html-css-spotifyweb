@@ -42,19 +42,21 @@
                 <!-- nav actions -->
                 <nav class="main-nav-actions">
                     <ul class="menu-actions">
-                        <li class="active">
+                        <li class="active hover-white">
+                           <a href="#">
                             <div class="action-icon">
                                 <img src="img/home.svg" alt="">
                             </div>
                             <span>Home</span>
+                           </a>
                         </li>
-                        <li class="normal">
+                        <li class="normal hover-white">
                             <div class="action-icon">
                                 <img src="img/search.svg" alt="">
                             </div>
                             <span>Cerca</span>
                         </li>
-                        <li class="normal">
+                        <li class="normal hover-white">
                             <div class="action-icon">
                                 <img src="img/libreria.svg" alt="">
                             </div>
@@ -66,39 +68,39 @@
                 <div class="main-nav-playlist">
                     <h4>PLAYLIST</h4>
                     <!-- add new playlist -->
-                    <div class="new-playlist">
+                    <div class="new-playlist hover-white">
                         <a class="add-playlist-btn" href="#">
                             +
                         </a>
                         <div class="add-playlist-text">Crea Playlist</div>
                     </div>
                     <ul class="my-playlist">
-                        <li>
+                        <li class="hover-white">
                             Nome Playlist
                         </li>
-                        <li>
+                        <li class="hover-white">
                             Nome Playlist
                         </li>
-                        <li>
+                        <li class="hover-white">
                             Nome Playlist
                         </li>
-                        <li>
+                        <li class="hover-white">
                             Nome Playlist
                         </li>
-                        <li>
+                        <li class="hover-white">
                             Nome Playlist
                         </li>
-                        <li>
+                        <li class="hover-white">
                             Nome Playlist
                         </li>
-                        <li>
+                        <li class="hover-white">
                             Nome Playlist
                         </li>
                     </ul>
                 </div>
                 <!-- instal and user -->
                 <div class="main-nav-bottom">
-                    <div class="instal">
+                    <div class="instal hover-white">
                         <img src="img/download.svg" alt="">
                         <span>Installa app</span>
                     </div>
@@ -113,25 +115,31 @@
                 <div class="container-right-main-content">
                     <div class="right-main-content-nav">
                         <ul>
-                            <li>
-                                <a href="#">IN EVIDENZA</a>
+                            <li class="hover-white">
+                                <a class="active-nav-right-main" href="#">
+                                    IN EVIDENZA
+                                    <div class="active-bottom-border"></div>
+                                </a>
+                                
                             </li>
-                            <li>
+                            <li class="hover-white">
                                 <a href="#">PODCAST</a>
                             </li>
-                            <li>
+                            <li class="hover-white">
                                 <a href="#">CLASSIFICHE</a>
                             </li>
-                            <li>
+                            <li class="hover-white">
                                 <a href="#">GENERI E MOOD</a>
                             </li>
-                            <li>
+                            <li class="hover-white">
                                 <a href="#">NUOVE USCITE</a>
                             </li>
-                            <li>
+                            <li class="hover-white">
                                 <a href="#">SCOPRI</a>
                             </li>
+
                         </ul>
+                        
                     </div>
                 </div>
                 <div class="container-right-main-content">
@@ -299,10 +307,10 @@
                         </div>
                     </div>
                     <div class="add-to-favorites">
-                        <div>
+                        <div class="hover-white">
                             <i class="far fa-heart"></i>
                         </div>
-                        <div>
+                        <div class="hover-white">
                             <i class="far fa-folder"></i>
                         </div>
                     </div>
@@ -314,18 +322,22 @@
                         <i class="fas fa-random"></i>
                         <i class="fas fa-step-backward"></i>
                         <span class="play-btn">
-                            <i class="far fa-play-circle"></i>
+                            <i class="far fa-play-circle absolute"></i>
                         </span>
                         <i class="fas fa-step-forward"></i>
                         <i class="fas fa-redo"></i>
                     </div>
                     <!-- footer playback bar -->
-                    <div class="playback-bar">
-                        <span>0:25</span>
-                        <div class="bar">
-                            <div class="progress-bar"></div>
+                    <div class="relative">
+                        <div class="playback-bar">
+                            <span>0:25</span>
+                            
+                            <div class="bar">
+                                <div class="progress-bar"></div>
+                            </div>
+                            <div class="bar-circle"></div>
+                            <span>4:35</span>
                         </div>
-                        <span>4:35</span>
                     </div>
                 </div>
                 <!-- right footer - volume bar -->
@@ -334,8 +346,12 @@
                     <i class="fas fa-desktop"></i>
                     <i class="fas fa-volume-up"></i>
                     <div class="bar">
-                        <div class="progress-bar"></div>
+                        <div class="progress-bar">
+                        </div>
+                        
                     </div>
+                    <div class="bar-circle"></div>
+                    
                 </div>
             </div>
         </footer>
