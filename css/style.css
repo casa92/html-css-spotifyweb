@@ -270,11 +270,14 @@ ul.my-playlist {
     width: 100%;
     height: calc(((100vw - 250px) / 6) - 15px);
     position: relative;
-    cursor: pointer;
+    cursor: pointer;  
 }
 .container-right-main-content .single-song img {
     width: 100%; 
-    height: 100%;   
+    height: 100%;
+}
+.famous-artists .single-song img {
+    border-radius: 50%;
 }
 .song-description {
     text-align: center;
@@ -313,6 +316,9 @@ ul.my-playlist {
     left: 0;
     background-color: rgba(0, 0, 0, 0.5);
     display: none;
+}
+.famous-artists .overlay-play-song {
+    border-radius: 50%;
 }
 .song-img:hover .overlay-play-song {
     display: block;
